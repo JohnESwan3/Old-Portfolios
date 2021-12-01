@@ -1,0 +1,54 @@
+// Smartphones (horizontal)
+@media (max-width: 413px) {
+  //   .navbar {
+  //     & ul {
+  //       //   width: vw;
+  //       flex-direction: row;
+  //     }
+  //   }
+}
+
+// Smartphones (vertical)
+@media (max-height: 413px) {
+  form {
+    height: 50%;
+
+    & h1 {
+      color: $text-accent;
+    }
+
+    & input,
+    textarea,
+    button {
+      margin: 5px;
+      padding: 12px 20px;
+
+      //   margin-left: 5rem;
+    }
+
+    & textarea {
+      height: 100px;
+    }
+  }
+  .navbar {
+    & ul {
+      //   width: vw;
+      flex-direction: row;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .slider h2 {
+    font-size: 20px;
+  }
+  .slider > div {
+    padding: 0 2%;
+  }
+  .control label {
+    font-size: 35px;
+  }
+  .slider .button {
+    padding: 0 30px;
+  }
+}

@@ -1,0 +1,92 @@
+@media (max-width: 768px) {
+  body {
+    background-position: 0%;
+  }
+
+  .about-page {
+    background-position: 40%;
+  }
+
+  .card-container {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .skill-card {
+    width: 70%;
+    max-width: 80%;
+  }
+  .container {
+    width: 85%;
+  }
+
+  section {
+    height: 100vh;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 820px) {
+  .page-popup {
+    width: 100%;
+    left: 0rem;
+  }
+
+  .app-container {
+    height: 2.5rem;
+  }
+  .card-container {
+    width: 100%;
+  }
+
+  // #timeline {
+  //   margin-top: 30rem;
+  // }
+  #timeline ul li div {
+    width: calc(50vw - 150px);
+  }
+
+  #timeline ul li:nth-child(even) div {
+    left: -126px;
+  }
+  section {
+    height: 120vh;
+  }
+}
+
+@media (max-width: 600px) {
+  #timeline ul li {
+    margin-left: 3rem;
+    // padding-left: 0;
+  }
+
+  #timeline ul li div {
+    width: calc(85vw - 150px);
+  }
+
+  #timeline ul li:nth-child(even) div {
+    left: 240px;
+  }
+
+  #timeline ul li:nth-child(even) div:before {
+    left: -17.5px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent rgba(255, 255, 255, 0.5) transparent transparent;
+  }
+}
+
+// Note 20 Ultra in Landscape
+@media (max-height: 444px) {
+  section {
+    margin-bottom: 30rem;
+  }
+
+  footer {
+    height: 50vh;
+    margin-top: 50rem;
+  }
+
+  #timeline {
+    // margin-top: 10rem;
+    height: 130vh;
+  }
+}

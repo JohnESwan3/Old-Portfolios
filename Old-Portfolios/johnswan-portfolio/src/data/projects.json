@@ -1,0 +1,20 @@
+[
+  {
+    "img": "../assets/images/portfolio.png",
+    "alt": "My Portfolio",
+    "name": "My Portfolio",
+    "button": "View Project"
+  },
+  {
+    "img": "../assets/images/swan-lawn.png",
+    "alt": "Swan-Lawn Bootstrap Website",
+    "name": "Swan-Lawn",
+    "button": "View Project"
+  },
+  {
+    "img": "../assets/images/gmg.png",
+    "alt": "Gamers Make Games Website",
+    "name": "Gamers Make Games",
+    "button": "View Project"
+  }
+]

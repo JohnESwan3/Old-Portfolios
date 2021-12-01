@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/f05af6a0e4.js" crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/dist/css/main.css">
+    <title>John Swan | Projects</title>
+</head>
+<body>
+
+    <!-- Hamburger Menu -->
+    <div class="menu-wrap">
+        <input type="checkbox" class="toggler">
+        <div class="hamburger"><div></div></div>
+        <div class="menu">
+            <div>
+                <div>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html" class="current">Projects</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <header id="showcase-inner">
+        <div class="container text-center">
+            <h2 class="section-title">Projects</h2>
+        <div class="bottom-line"></div>
+        </div>
+    </header>
+    
+    <!-- Section A: Music Player -->
+    <div class="player-body">
+    <div class="music-container">
+        <div class="music-info">
+            <h4 id="title">Ambient Gold</h4>
+            <h6 id="artist">Harris Heller</h6>
+            <div class="progress-container">
+                <div class="progress"></div>
+            </div>
+        </div>
+
+        <audio src="music/Ambient Gold.mp3" id="audio">
+        </audio>
+        <div class="img-container">
+            <img src="images/Ambient Gold.jpg" alt="cover" id="cover">
+        </div>
+
+        <div class="navigation">
+            <button id="prev" class="action-btn">
+                <i class="fas fa-backward"></i>
+            </button>
+            <button id="play" class="action-btn action-btn-big">
+                <i class="fas fa-play"></i>
+            </button>
+            <button id="next" class="action-btn">
+                <i class="fas fa-forward"></i>
+            </button>
+        </div>
+    </div>  
+    </div>  
+    <!-- Section B: Cards - Look Funky on mobile-->
+    <!-- Need to re-evaluate this. Maybe a better way of displaying and linking projects? -->
+    <div class="page-container">
+    <section class="project-cards py-3">
+        <div class="card-container">
+            <div class="panel active" style="background-image: url(/dist/images/GMG_screenshot.png)"">
+                <h3>Gamers Make Games</h3>
+                <p>Mockup YT Channel</p>
+                <a href="https://gamersmakegames.com"><i class="fas fa-arrow-circle-up">GO</i></a>
+            </div>
+            <div class="panel" style="background-image: url(/dist/images/countdown.png)">
+                
+                <h3>Countdown Timer</h3>
+                <p>A Timer that counts down to my B-Day</p>
+                <a href="countdown.html"><i class="fas fa-arrow-circle-up">GO</i></a>
+            </div>
+            <div class="panel" style="background-image: url(/dist/images/mainbg.jpg)">
+                <h3>Project 3</h3>
+                <p>Lorem, ipsum dolor.</p>
+                <a href="#"><i class="fas fa-arrow-circle-up">GO</i></a>
+            </div>
+            <div class="panel" style="background-image: url(/dist/images/mainbg.jpg)">
+                <h3>Project 4</h3>
+                <p>Lorem, ipsum dolor.</p>
+                <a href="#"><i class="fas fa-arrow-circle-up">GO</i></a>
+            </div>
+            <div class="panel" style="background-image: url(/dist/images/mainbg.jpg)">
+                <h3>Project 5</h3>
+                <p>Lorem, ipsum dolor.</p>
+                <a href="#"><i class="fas fa-arrow-circle-up">GO</i></a>
+            </div>
+        </div>
+    </section>
+   </div>
+
+
+    <!-- Footer -->
+    <footer id="main-footer">
+        <div class="footer-content container">
+            <p>Copyright &copy; 2021. All Rights Reserved</p>
+            <div class="social">
+                <a href="https://twitter.com/JohnESwan3"><i class="fab fa-twitter"></a></i>
+                <a href="https://github.com/JohnESwan3"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/jes3/"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/dist/JS/cards.js"></script>
+    <script src="/dist/JS/music.js"></script>
+</body>
+</html>

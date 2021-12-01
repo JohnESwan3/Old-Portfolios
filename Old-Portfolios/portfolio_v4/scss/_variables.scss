@@ -1,0 +1,9 @@
+$text-primary: #116466;
+$text-secondary: #d1e8e2;
+$text-accent: #ffcb9a;
+$bg-primary: #2c3531;
+$bg-secondary: #d9b08c;
+$bg-gradient: linear-gradient(45deg, $bg-primary, rgba(255, 0, 0, 0) 70.9%),
+  linear-gradient(135deg, $text-primary, rgba(0, 255, 0, 0) 40.71%),
+  linear-gradient(225deg, $bg-primary, rgba(0, 0, 255, 0) 20.71%),
+  linear-gradient(315deg, $text-primary, rgba(0, 0, 255, 0) 100%);

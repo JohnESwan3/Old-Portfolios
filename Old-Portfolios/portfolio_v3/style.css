@@ -1,0 +1,179 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  cursor: default;
+  color: #fff;
+}
+
+body {
+  height: 100vh;
+  background: url(images/bg.jpg) no-repeat center center/cover;
+  /* z-index: 0; */
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Utilities */
+.selected {
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+.hidden {
+  transition: all 0.25s ease-in-out;
+  opacity: 0;
+}
+
+.bg-glass {
+  background-color: rgba(22, 43, 71, 0.4);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 26px 42px rgba(0, 0, 0, 0.2);
+}
+
+.bg-none {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.border-header {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 4px solid rgba(255, 255, 255, 0.2);
+}
+
+.border-main {
+  border-top: 2px solid rgba(255, 255, 255, 0.5);
+  border-left: 2px solid rgba(255, 255, 255, 0.3);
+  border-right: 2px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+.border-footer {
+  border-top: 2px solid rgba(255, 255, 255, 0.2);
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.border-none {
+  border: 0px;
+  outline: none;
+}
+
+.dark-filter {
+  content: '';
+  /* position: fixed; */
+  overflow-y: scroll;
+  overflow: hidden;
+  background-attachment: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%; /*It works I guess*/
+  background: rgba(0, 0, 0, 0.55);
+  background-attachment: fixed;
+}
+
+.page-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  margin: auto;
+}
+
+/* Class Specific Styles */
+.navbar h1 {
+  color: rgb(255, 255, 255);
+  font-size: 1.75rem;
+  font-family: 'Tangerine', cursive;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #e60073, 0 0 20px #e60073,
+    0 0 25px #e60073, 0 0 30px #e60073, 0 0 35px #e60073;
+}
+
+.app {
+  /* padding: 0.5rem; */
+  margin: 0 1.25rem 0 1.25rem;
+  font-size: 1.5rem;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+}
+
+.app i:hover {
+  transition: all 0.1s ease-in;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+/* Animations */
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #e60073, 0 0 20px #e60073,
+      0 0 25px #e60073, 0 0 30px #e60073, 0 0 35px #e60073;
+  }
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 20px #ff4da6, 0 0 30px #ff4da6,
+      0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6;
+  }
+}
+@-webkit-keyframes box-glow {
+  from {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #e60073, 0 0 20px #e60073,
+      0 0 25px #e60073, 0 0 30px #e60073, 0 0 35px #e60073;
+  }
+  to {
+    box-shadow: 0 0 10px #fff, 0 0 20px #ff4da6, 0 0 30px #ff4da6,
+      0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6;
+  }
+}
+
+/* Page Styling */
+
+/* About Page */
+.about-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  /* opacity: 0;*/
+  transition: opacity 0.1s ease-in;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(images/3.jpg) no-repeat center center/cover;
+  background-position: center top;
+}
+
+.slide-contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.carousel-item {
+  position: relative;
+}
+
+.container {
+  position: relative;
+}
