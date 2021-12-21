@@ -3,7 +3,7 @@ const hoursEl = document.getElementById('hours');
 const minsEl = document.getElementById('mins');
 const secondsEl = document.getElementById('seconds');
 
-const bDay = '1 Nov 2021';
+const bDay = '1 Nov 2022';
 
 function countdown() {
   const bDayDate = new Date(bDay);
